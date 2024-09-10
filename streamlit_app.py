@@ -21,5 +21,5 @@ page_bg_img = f'''
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # Exemple de contenu de votre application
-st.title("Mon Application Streamlit")
-st.write("Contenu de votre application avec une image en arrière-plan.")
+st.title("Welcome to MediSense Platform")
+st.write("Access the best medical information and answers quickly and easily")
