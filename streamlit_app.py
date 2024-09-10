@@ -20,6 +20,17 @@ page_bg_img = f'''
 # Appliquer le CSS à l'application Streamlit
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
+# Centrer du texte avec HTML et CSS
+st.markdown(
+    """
+    <div style="text-align: center;">
+        <h4>Access the best medical information and answers quickly and easily</h4>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+
 # Exemple de contenu de votre application
 st.title("Welcome to MediSense Platform")
 st.write("Access the best medical information and answers quickly and easily")
