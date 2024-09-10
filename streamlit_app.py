@@ -5,7 +5,7 @@ st.write('Welcome to MediSense Platform')
 page_bg_img = '''
 <style>
 .stApp {
-  background-image: url("C:\Users\benat\Documents\RAG\top.jpg");
+  background-image: url("C:/Users/benat/Documents/RAG/top.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
