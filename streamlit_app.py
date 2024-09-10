@@ -1,2 +1,16 @@
 import streamlit as st
 st.write('Welcome to MediSense Platform')
+# Login page function
+def login_page():
+    set_png_as_page_bg('top.jpg')  # Set background image
+    #display_logo('logo.jpeg')  # Display logo
+    st.logo('logo.jpeg', icon_image='logo.jpeg')
+    st.title("Create Account")
+
+    email = st.text_input("Email")
+    password = st.text_input("Password", type="password")
+
+    if st.button("Login"):
+
+            st.session_state.logged_in = True
+            st.experimental_user  # Reload the page to move to the model page
