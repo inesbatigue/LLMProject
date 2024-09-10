@@ -1,2 +1,2 @@
 import streamlit as st
-st.write(Welcome to MediSense Platform)
+st.write('Welcome to MediSense Platform')
