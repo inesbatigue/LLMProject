@@ -33,4 +33,3 @@ st.markdown(
 
 # Exemple de contenu de votre application
 st.title("Welcome to MediSense Platform")
-st.write("Access the best medical information and answers quickly and easily")
