@@ -2,28 +2,19 @@ import streamlit as st
 from PIL import Image
 import base64
 from io import BytesIO
+# Définir une URL d'image en ligne pour tester
+img_url = "https://img.freepik.com/photos-gratuite/vue-dessus-medecine-fond-bleu_23-2149341569.jpg?t=st=1725964503~exp=1725968103~hmac=f1236079f03d3b3276f4e07615fc8d75d2f6565369a3795513c3c3e1e8518382&w=1060
 
-# Message de bienvenue
-st.write('Welcome to MediSense Platform')
-
-# Charger l'image
-img_path = "https://github.com/inesbatigue/LLMProject/blob/main/top.jpg"  # Assurez-vous que le chemin est correct
-image = Image.open(img_path)
-
-# Convertir l'image en base64 pour l'utiliser dans du CSS
-buffered = BytesIO()
-image.save(buffered, format="JPEG")
-img_str = base64.b64encode(buffered.getvalue()).decode()
-
-# Code CSS pour définir l'image en arrière-plan avec base64
+# Code CSS avec l'URL de l'image
 page_bg_img = f'''
 <style>
-.stApp {{
-  background-image: url("data:image/jpeg;base64,{img_str}");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}}
+    .stApp {{
+        background: url({img_url});
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }}
 </style>
 '''
 
