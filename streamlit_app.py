@@ -23,7 +23,7 @@ def add_background_and_logo(bg_image, logo_image):
         f"""
         <style>
         .stApp {{
-            background-image: url({bg_image});
+            background-image: url({https://github.com/inesbatigue/LLMProject/blob/main/top.jpg});
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
