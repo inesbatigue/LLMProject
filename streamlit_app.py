@@ -1,15 +1,29 @@
 import streamlit as st
+from PIL import Image
+import base64
+from io import BytesIO
+
+# Message de bienvenue
 st.write('Welcome to MediSense Platform')
 
-# Code CSS pour définir l'image en arrière-plan
-page_bg_img = '''
+# Charger l'image
+img_path = "C:/Users/benat/Documents/RAG/top.jpg"  # Assurez-vous que le chemin est correct
+image = Image.open(img_path)
+
+# Convertir l'image en base64 pour l'utiliser dans du CSS
+buffered = BytesIO()
+image.save(buffered, format="JPEG")
+img_str = base64.b64encode(buffered.getvalue()).decode()
+
+# Code CSS pour définir l'image en arrière-plan avec base64
+page_bg_img = f'''
 <style>
-.stApp {
-  background-image: url("C:/Users/benat/Documents/RAG/top.jpg");
+.stApp {{
+  background-image: url("data:image/jpeg;base64,{img_str}");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
+}}
 </style>
 '''
 
