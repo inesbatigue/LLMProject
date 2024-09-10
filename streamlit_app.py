@@ -7,7 +7,7 @@ from io import BytesIO
 st.write('Welcome to MediSense Platform')
 
 # Charger l'image
-img_path = "C:/Users/benat/Documents/RAG/top.jpg"  # Assurez-vous que le chemin est correct
+img_path = "https://github.com/inesbatigue/LLMProject/blob/main/top.jpg"  # Assurez-vous que le chemin est correct
 image = Image.open(img_path)
 
 # Convertir l'image en base64 pour l'utiliser dans du CSS
